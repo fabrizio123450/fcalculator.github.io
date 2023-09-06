@@ -8,8 +8,9 @@
     <title>Calculadora</title>
 </head>
 <div class="calculadora-container">
-    <head>Mi Calculadora</head>
+    
     <body>
+        <div>Mi Calculadora</div>
         <div>
             <input type="text" class="input" id="pantalla" disabled>
         </div>
@@ -36,6 +37,14 @@
             <button class="boton-operator" onclick="borrar()">C</button>
             <button class="boton-operator" onclick="calcular()">=</button>
             <button class="boton-operator" onclick="operacion('/')">/</button>
+        </div>
+        <div>
+            <button onclick="agregarPunto('.')">.</button>
+            <button onclick="agregarParentesis('(', ')')">( )</button>
+            <button onclick="agregarFuncion('sin(')">sin</button>
+            <button onclick="agregarFuncion('cos(')">cos</button>
+            <button onclick="agregarFuncion('tan(')">tan</button>
+            <button onclick="agregarFuncion('tan(')">PI</button>
         </div>
 
     </body>
