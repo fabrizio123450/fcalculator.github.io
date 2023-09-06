@@ -15,36 +15,37 @@
             <input type="text" class="input" id="pantalla" disabled>
         </div>
         <div>
-            <button class="boton" onclick="agregarNumero('7')">7</button>
-            <button class="boton" onclick="agregarNumero('8')">8</button>
-            <button class="boton" onclick="agregarNumero('9')">9</button>
-            <button class="boton-operator" onclick="operacion('+')">+</button>
+            <button class="boton" onclick="agregarCaracter('7')">7</button>
+            <button class="boton" onclick="agregarCaracter('8')">8</button>
+            <button class="boton" onclick="agregarCaracter('9')">9</button>
+            <button class="boton-operator" onclick="agregarCaracter('+')">+</button>
         </div>
         <div>
-            <button class="boton" onclick="agregarNumero('4')">4</button>
-            <button class="boton" onclick="agregarNumero('5')">5</button>
-            <button class="boton" onclick="agregarNumero('6')">6</button>
-            <button class="boton-operator" onclick="operacion('-')">-</button>
+            <button class="boton" onclick="agregarCaracter('4')">4</button>
+            <button class="boton" onclick="agregarCaracter('5')">5</button>
+            <button class="boton" onclick="agregarCaracter('6')">6</button>
+            <button class="boton-operator" onclick="agregarCaracter('-')">-</button>
         </div>
         <div>
-            <button class="boton" onclick="agregarNumero('1')">1</button>
-            <button class="boton" onclick="agregarNumero('2')">2</button>
-            <button class="boton" onclick="agregarNumero('3')">3</button>
-            <button class="boton-operator" onclick="operacion('*')">*</button>
+            <button class="boton" onclick="agregarCaracter('1')">1</button>
+            <button class="boton" onclick="agregarCaracter('2')">2</button>
+            <button class="boton" onclick="agregarCaracter('3')">3</button>
+            <button class="boton-operator" onclick="agregarCaracter('*')">*</button>
         </div>
         <div>
-            <button class="boton" onclick="agregarNumero('0')">0</button>
+            <button class="boton" onclick="agregarCaracter('0')">0</button>
             <button class="boton-operator" onclick="borrar()">C</button>
             <button class="boton-operator" onclick="calcular()">=</button>
-            <button class="boton-operator" onclick="operacion('/')">/</button>
+            <button class="boton-operator" onclick="agregarCaracter('/')">/</button>
         </div>
         <div>
-            <button onclick="agregarPunto('.')">.</button>
-            <button onclick="agregarParentesis('(', ')')">( )</button>
-            <button onclick="agregarFuncion('sin(')">sin</button>
-            <button onclick="agregarFuncion('cos(')">cos</button>
-            <button onclick="agregarFuncion('tan(')">tan</button>
-            <button onclick="agregarFuncion('tan(')">PI</button>
+            <button onclick="agregarCaracter('.')" class="boton-operator">.</button>
+            <button onclick="agregarCaracter('(', ')')" class="boton-operator">(</button>
+            <button onclick="agregarCaracter(' )' )" class="boton-operator"> )</button>
+            <button onclick="agregarFuncion('sin(')" class="boton-operator">sin</button>
+            <button onclick="agregarFuncion('cos(')" class="boton-operator">cos</button>
+            <button onclick="agregarFuncion('tan(')" class="boton-operator">tan</button>
+            <button onclick="agregarFuncion('tan(')" class="boton">PI</button>
         </div>
 
     </body>
