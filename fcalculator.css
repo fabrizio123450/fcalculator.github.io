@@ -1,3 +1,6 @@
+body {
+    background-color:  #716b69; /* Cambia el color de fondo */
+}
 /*Container para la calculadora*/
 .calculadora-container {
     text-align: center;
@@ -35,16 +38,24 @@
     background-color: yellow;
 }
 
+.igual {
+    width: 110px;
+}
+
 /* Efecto hover */
 .boton:hover {
     color: white;
     background-color: #1c0d02;
 }
 .boton-operator:hover{
-    background-color: #ffcc00;
+    background-color: #f5b00f;
 }
 
 /* Efecto clic */
 .boton:active {
     background-color: grey;
 }
+.boton-operator:active{
+    background-color: #e8d249;
+}
+
