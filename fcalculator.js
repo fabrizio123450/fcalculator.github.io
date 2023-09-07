@@ -1,5 +1,4 @@
 let operacionActual = "";
-let resultado = document.getElementById("pantalla");
  // Funciones JavaScript para la calculadora
  function agregarCaracter(caracter) {
     // Verificar si el último carácter en la operación actual es un operador
@@ -16,7 +15,6 @@ let resultado = document.getElementById("pantalla");
 //calcula la funcion trigonometrica 
 function agregarFuncion(sfuncion){
     const expresion = document.getElementById("pantalla").value;
-    console.log(expresion);
     let resultado;
     if(expresion === "") return;//si esta vacio no hace nada
     switch (sfuncion) {
