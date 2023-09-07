@@ -15,24 +15,27 @@ let resultado = document.getElementById("pantalla");
 }
 //calcula la funcion trigonometrica 
 function agregarFuncion(sfuncion){
-    if(sfuncion === "sin"){
-        const expresion = document.getElementById("pantalla").value;
-        const resultado = Math.sin(eval(expresion));
-        const resultadoRedondeado = resultado.toFixed(3); // Reducir a 3 decimales
-        document.getElementById("pantalla").value = resultadoRedondeado;
+    const expresion = document.getElementById("pantalla").value;
+    console.log(expresion);
+    let resultado;
+    if(expresion === "") return;//si esta vacio no hace nada
+    switch (sfuncion) {
+        case "sin":
+            resultado = Math.sin(eval(expresion));
+            break;
+        case "cos":
+            resultado = Math.cos(eval(expresion));
+            break;
+        case "tan":
+            resultado = Math.tan(eval(expresion));
+            break;
+        default:
+            console.log("Función trigonométrica no válida.");
+            return;
     }
-    if(sfuncion === "cos"){
-        const expresion = document.getElementById("pantalla").value;
-        const resultado = Math.cos(eval(expresion));
-        const resultadoRedondeado = resultado.toFixed(3); 
-        document.getElementById("pantalla").value = resultadoRedondeado;
-     }
-     if(sfuncion === "tan"){
-        const expresion = document.getElementById("pantalla").value;
-        const resultado = Math.tan(eval(expresion));
-        const resultadoRedondeado = resultado.toFixed(3);
-        document.getElementById("pantalla").value = resultadoRedondeado;
-     }
+
+    const resultadoRedondeado = resultado.toFixed(3);
+    document.getElementById("pantalla").value = resultadoRedondeado;
 }
 // devuelve los operadores
 function esOperador(caracter) {
