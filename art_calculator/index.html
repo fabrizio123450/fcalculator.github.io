@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fcalculator.css">
+    <script src="fcalculator.js"></script>
+    <title>Calculadora</title>
+</head>
+<div class="calculadora-container">
+    
+    <body>
+        <div>
+            <h2>Mi Calculadora</h2>
+        </div>
+        <div>
+            <input type="text" class="input" id="pantalla" disabled>
+        </div>
+        <div>
+            <button class="boton" onclick="agregarCaracter('7')">7</button>
+            <button class="boton" onclick="agregarCaracter('8')">8</button>
+            <button class="boton" onclick="agregarCaracter('9')">9</button>
+            <button class="boton-operator" onclick="agregarCaracter('+')">+</button>
+        </div>
+        <div>
+            <button class="boton" onclick="agregarCaracter('4')">4</button>
+            <button class="boton" onclick="agregarCaracter('5')">5</button>
+            <button class="boton" onclick="agregarCaracter('6')">6</button>
+            <button class="boton-operator" onclick="agregarCaracter('-')">-</button>
+        </div>
+        <div>
+            <button class="boton" onclick="agregarCaracter('1')">1</button>
+            <button class="boton" onclick="agregarCaracter('2')">2</button>
+            <button class="boton" onclick="agregarCaracter('3')">3</button>
+            <button class="boton-operator" onclick="agregarCaracter('*')">*</button>
+        </div>
+        <div>
+            <button class="boton" onclick="agregarCaracter('0')">0</button>
+            <button class="boton-operator" onclick="borrar()">C</button>
+            <button class="boton-operator" onclick="agregarCaracter('.')" >.</button>
+            <button class="boton-operator" onclick="agregarCaracter('/')">/</button>
+        </div>
+        <div>
+            <button class="boton-operator igual" onclick="calcular()">=</button>
+            <button class="boton-operator" onclick="agregarFuncion('sin')">sin</button>
+            <button class="boton-operator" onclick="agregarFuncion('cos')">cos</button>
+            <button class="boton-operator" onclick="agregarFuncion('tan')">tan</button>
+            <button class="boton-operator" onclick="agregarCaracter('3.14')" >PI</button>
+        </div>
+
+    </body>
+</div>
+</html>
